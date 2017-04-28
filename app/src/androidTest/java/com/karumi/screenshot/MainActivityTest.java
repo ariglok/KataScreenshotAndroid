@@ -84,6 +84,29 @@ public class MainActivityTest extends ScreenshotTest {
 
     compareScreenshot(activity);
   }
+  @Test public void ShowsNameIfThereAreAvenger() {
+    givenThereAreSomeSuperHeroes(1, true);
+
+    Activity activity = startActivity();
+
+    compareScreenshot(activity);
+  }
+
+  @Test public void ShowsNameIfThereAreTwoAvenger() {
+    givenThereAreSomeSuperHeroes(2, true);
+
+    Activity activity = startActivity();
+
+    compareScreenshot(activity);
+  }
+
+  @Test public void ShowsNameIfThereAreTenAvenger() {
+    givenThereAreSomeSuperHeroes(10, true);
+
+    Activity activity = startActivity();
+
+    compareScreenshot(activity);
+  }
 
   private List<SuperHero> givenThereAreSomeSuperHeroes(int numberOfSuperHeroes, boolean avengers) {
     List<SuperHero> superHeroes = new LinkedList<>();
