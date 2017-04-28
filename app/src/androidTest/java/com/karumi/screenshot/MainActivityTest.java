@@ -128,4 +128,5 @@ public class MainActivityTest extends ScreenshotTest {
   private MainActivity startActivity() {
     return activityRule.launchActivity(null);
   }
+
 }
