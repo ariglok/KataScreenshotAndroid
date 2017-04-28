@@ -52,13 +52,13 @@ public class SuperHeroDetailActivity extends BaseActivity implements SuperHeroDe
   }
 
   @Override public void showSuperHero(SuperHero superHero) {
-    if (superHero != null) {
+   // if (superHero != null) {
       Picasso.with(this).load(superHero.getPhoto()).fit().centerCrop().into(superHeroPhotoImageView);
       superHeroNameTextView.setText(superHero.getName());
       superHeroDescriptionTextView.setText(superHero.getDescription());
       int avengersBadgeVisibility = superHero.isAvenger() ? View.VISIBLE : View.GONE;
       avengersBadgeView.setVisibility(avengersBadgeVisibility);
-    }
+   // }
   }
 
   public static void open(Context context, String superHeroName) {

@@ -39,15 +39,13 @@ public class SuperHeroViewHolderTest extends ScreenshotTest {
   }
 
   @Test public void showsAnySuperHeroLongName() {
-    SuperHero superHero = givenASuperHero();
+    SuperHero superHero = givenASuperHeroWithALongName();
     SuperHeroViewHolder holder = givenASuperHeroViewHolder();
 
     holder.render(superHero);
 
     compareScreenshot(holder, R.dimen.super_hero_row_height);
   }
-  //ShowsARegularSuperHero
-  //ShowsASuperHeroLongName
 
   private SuperHeroViewHolder givenASuperHeroViewHolder() {
     Context context = getInstrumentation().getTargetContext();
