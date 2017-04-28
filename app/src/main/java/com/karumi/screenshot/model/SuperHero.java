@@ -20,7 +20,7 @@ public class SuperHero {
 
   private final String name;
   private final String photo;
-  private final boolean isAvenger; 
+  private final boolean isAvenger;
   private final String description;
 
   public SuperHero(String name, String photo, boolean isAvenger, String description) {
